@@ -1,0 +1,106 @@
+:root{
+    --vermelho:#E50914; 
+    --preto: #141414;
+    --teste: #ffffff;
+    --texto: #AAA;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; /* limite borda na caixa*/
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+   color: var(--vermelho);
+   font-family: 'Arial Black', Times;
+   font-size: 40px;
+}
+
+header nav a{
+    color: var(--texto);
+    text-decoration: none;
+    margin-right: 10px;
+ }
+
+ header nav a:hover{
+     color : #afff
+ }
+
+ .main-film{
+     font-size: 20px;
+     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.40)100%), url('/img/Capa.jpg');
+
+     height: 400px;
+     background-size: cover;
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+
+ .main-film  .descricao{
+     font-size: 16px;
+     margin-bottom: 40px;
+ }
+
+ .main-film .titulo{
+     margin-top: 20px;
+     font-size: 35px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .botao{ 
+     background: rgba(0, 0, 0, 0.678) ;
+     border: none;
+     color: white;
+     padding: 15px 25px;
+     margin-left: 20px;
+     font-size: 12px;
+
+     cursor: pointer;
+     transition: .4s ease all;
+ } 
+
+ .botao:hover{
+     background-color: blanchedalmond;
+     color: black
+ }
+
+ .botao i{
+     margin: 8px
+ }
+ 
+.container{
+    margin-left: 20px;
+}
+
+.main-film .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
