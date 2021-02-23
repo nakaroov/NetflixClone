@@ -12,6 +12,7 @@
 }
 
 body{
+    background: --preto;
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
 }
